@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-import reword from '@/assets/rewordr.png'
+import reword from '@/assets/reword.png'
 import ending from '@/assets/ending.png'
 import wx from '@/assets/wx.jpg'
 import zfb from '@/assets/zfb.jpg'
