@@ -8,7 +8,10 @@
       </div>
       <p class="common-content-block">
         俗话说，无规矩不成方圆。在实际研发中，可能存在研发维护人员的更替或者由于长时间不维护项目造成的记忆模糊、混乱等情况，
-        导致对代码所实现的真正功能的理解有困难和歧义。编码风格的不同，对项目也会有不同的影响，统一的编码规范有益于提高研发
+        导致对代码所实现的真正功能的理解有困难和歧义。
+      </p>
+      <p class="common-content-block">
+        编码风格的不同，对项目也会有不同的影响，统一的编码规范有益于提高研发
         效率、降低后期维护开发的成本，也提高了代码复查效率和效果。
       </p>
       <div class="common-sub-title">
@@ -43,9 +46,12 @@
       </div>
       <b>1. 文件资源命名</b>
       <p class="common-contentb-block">
-        以可读性而言，用小写字母命名或小写字母与下划线组合命名文件名与文件所在的文件夹。尽量使用语义化，与业务或功能相关的词来命名（比如
-        main_list、file_upload）。图片静态资源命名，使用小写字母命名或小写字母与下划线组合命名（比如
-        imgbg.jpg，home_top_img.png）。确保文件命名总是以字母开头而不是数字。
+        以可读性而言，用小写字母命名、小写字母与下划线组合命名文件名、文件夹和图片，尽量使用语义化，与业务或功能相关的词来命名（比如file_upload、home_top_img.png）。
+      </p>
+      <p class="common-contentb-block">
+        确保文件命名总是以字母开头而不是数字。
+      </p>
+      <p class="common-contentb-block">
         特殊含义的文件，需要对文件增加前后缀或特定的扩展名（比如 .min.js,
         .min.css, .config.json），抑或一串前缀（比如 all.main.min.css）。
       </p>
@@ -83,10 +89,16 @@
       <b>4. CSS BEM</b>
       <p class="common-contentb-block">
         BEM 的意思就是块（block）、元素（element）、修饰符（modifier），是由
-        Yandex 团队提出的一种前端命名方法论。命名约定的模式是.block{}、
-        .block__element{}、.block--element{}。block代表了更高级别的抽象或组件，
-        block__element代表 .block的后代，用于形成一个完整的.block的整体，
-        block--modifier表示.block的不同状态或不同版本。如.person_male、.person_male--color。
+        Yandex团队提出的一种前端命名方法论。
+      </p>
+      <p class="common-contentb-block">
+        block代表了更高级别的抽象或组件, 命名约定的模式是.block{}，如.form{}。
+      </p>
+      <p class="common-contentb-block">
+        element代表block的后代，命名约定的模式是.block__element{}，如.form__button{}。
+      </p>
+      <p class="common-contentb-block">
+        modifier表示block的不同状态或不同版本，命名约定的模式是block--modifier，如.form__button--blue{}。
       </p>
       <b>5. Eslint + Prettier</b>
       <p class="common-contentb-block">
