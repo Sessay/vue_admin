@@ -4,6 +4,8 @@ function resolve(dir) {
 }
 
 module.exports = {
+  // publicPath: './',
+  // outputDir: 'docs',
   chainWebpack: (config) => {
     config.module.rules.delete('svg') //重点:删除默认配置中处理svg,
     config.module
